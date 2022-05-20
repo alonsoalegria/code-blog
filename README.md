@@ -8,10 +8,6 @@ A complete blog website created with `JAMstack`. ([Gatsby.js](https://www.gatsby
 
 Code-blog is a complete tech blog website. Here we will see three post types: `blogs`, `categories`, and `authors`. We will create relations between these three post types. So that we can create a blog post with a category and an author. Also we will make a `search feature` where we can search against all these three post types.
 
-To create this website we will use `JAMstack`. We will use `Gatsby.js` for the frontend and `Sanity.io` for the headless CMS. And to source our content we will use `graphql`.
-
-## What we are going to learn/use
-
 - [React.js](https://reactjs.org/)
 - [Gatsby.js](https://www.gatsbyjs.org/)
   - [Gatsby-plugin-image](https://www.gatsbyjs.org/packages/gatsby-plugin-image/)
@@ -31,45 +27,7 @@ To create this website we will use `JAMstack`. We will use `Gatsby.js` for the f
   - Studio Customization
 - [React-PortableText](https://github.com/portabletext/react-portabletext)
 - [Axios](https://www.npmjs.com/package/axios)
-- Many More...
 
-## Requirements
-
-- Basic knowledge of HTML, CSS, and JavaScript
-- Experience with React.js
-
-## Starter files
-
-You can find all the starter files in starter-files branch. You can to go to the starter-files branch and download zip the the starter files or You can clone the project and git checkout to starter-files branch.
-
-## Getting Started
-
-You can follow our complete youtube tutorial [Coming Soon]
-or You can clone the project and git checkout to starter-files branch to get started.
-
-## Tools Used
-
-- Images: Unsplash
-- UI Design: Figma
-- Code Editor: VS Code
-
-## FAQ
-
-### Q: How can i get started?
-
-You can get started by following the YouTube tutorial of this project. Here is the full tutorial video link: [coming soon].
-
-### Q: I can use this project for my website?
-
-Yes you can. It absolutely free to use.
-
-## Feedback
-
-If you have any feedback, please reach out to us at [@web_cifar][wc-yt]
-
-## Support
-
-For support, join our [Community Group][wc-fb-group].
 
 ## License
 
