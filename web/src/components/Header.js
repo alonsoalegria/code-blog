@@ -1,14 +1,21 @@
-import clsx from 'clsx';
+import React, { useContext, useState } from 'react';
 import { Link } from 'gatsby';
-import React, { useState } from 'react';
-import { MdSearch, MdMenu, MdClose } from 'react-icons/md';
-import { menu } from '../constants/menu';
+import clsx from 'clsx';
+import { MdClose, MdMenu, MdSearch } from 'react-icons/md';
 import HeaderStyles from '../styles/HeaderStyles';
-import ActionButton from './buttons/ActionButton';
 import Logo from './Logo';
+import ActionButton from './buttons/ActionButton';
+import { menu } from '../constants/menu';
+import { SearchModalContext } from '../context/searchModalContext';
 
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const { openSearchModal } = useContext(SearchModalContext);
+
+  const handleSearchModalOpen = () => {
+    openSearchModal();
+  };
 
   const handleNavItemClick = () => {
     if (isNavOpen) {
@@ -26,7 +33,13 @@ function Header() {
           <div className={clsx('nav__wrapper', isNavOpen && 'open')}>
             <div className="mobileIcon">
               <div className="searchIcon">
-                <div className="searchIcon__wrapper">
+                <div
+                  className="searchIcon__wrapper"
+                  onClick={handleSearchModalOpen}
+                  onKeyDown={handleSearchModalOpen}
+                  role="button"
+                  tabIndex={0}
+                >
                   <MdSearch />
                 </div>
               </div>
@@ -65,7 +78,13 @@ function Header() {
                   </li>
                 ))}
                 <li className="searchIcon">
-                  <div className="searchIcon__wrapper">
+                  <div
+                    className="searchIcon__wrapper"
+                    onClick={handleSearchModalOpen}
+                    onKeyDown={handleSearchModalOpen}
+                    role="button"
+                    tabIndex={0}
+                  >
                     <MdSearch />
                   </div>
                 </li>
