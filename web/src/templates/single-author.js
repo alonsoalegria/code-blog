@@ -69,6 +69,7 @@ function SingleAuthor({ data }) {
           {/* Shows all the blogs posted -- 
           <BlogGrid blogs={blogs} />
           */}
+          <BlogGrid blogs={blogs} />
         </SingleAuthorStyles>
       </div>
     </PageSpace>
