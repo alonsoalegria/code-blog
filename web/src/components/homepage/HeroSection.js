@@ -11,10 +11,10 @@ function HeroSection() {
       <div className="container">
         <div className="hero__wrapper">
           <div className="left">
-            <h1 className="hero__heading">
-              “Knowledge is a treasure, but practice is the key to it.”
-            </h1>
-            <ParagraphText className="hero__text">― Lao Tzu</ParagraphText>
+            <h1 className="hero__heading">Welcome to Code Blog!</h1>
+            <ParagraphText className="hero__text">
+              Here you can get to know Alonso's interests and projects.
+            </ParagraphText>
             <Button to="/blogs" tag={Link} className="hero__button">
               Explore Blogs
             </Button>

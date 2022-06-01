@@ -45,7 +45,10 @@ function BlogList({ data, pageContext }) {
       <SEO title="Blogs" />
       <PageSpace top={80} bottom={100}>
         <div className="container">
-          <PageHeader title="All Blog Posts" description="description..." />
+          <PageHeader
+            title="All Blog Posts"
+            description="See what Alonso is up to"
+          />
           <BlogGrid blogs={blogs} />
           {numberOfPages > 1 && (
             <Pagination

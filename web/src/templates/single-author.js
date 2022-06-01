@@ -62,7 +62,10 @@ function SingleAuthor({ data }) {
             <Title className="name">{author.name}</Title>
             <div className="bio">
               <MyPortableText value={author._rawBio} />
-              <Link href="https://www.google.com/">google</Link>
+
+              <Link href="https://home-ruddy-six.vercel.app/">
+                Go back to the portfolio here
+              </Link>
             </div>
           </div>
           <hr className="hr" />
